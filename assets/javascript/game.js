@@ -14,6 +14,7 @@ var loseCounter = 0;
 //function that generates random number between 19 and 120
 function startGame(){
 		numberToMatch = Math.floor(Math.random() * (120 - 19) + 19);
+		$("#numberToMatch").html(numberToMatch);
 
 		//function that generates random number between 1 and 12
 		redGenerator = Math.floor(Math.random() * (1 - 12) + 12);
@@ -21,19 +22,26 @@ function startGame(){
 		blueGenerator = Math.floor(Math.random() * (1 - 12) + 12);
 		greenGenerator = Math.floor(Math.random() * (1 - 12) + 12);
 
-		
+		//apply 1/12 generator to crystal buttons
 		$("#redButton").on("click", function(){
 			console.log("red generator " + redGenerator)
+			$("#crystalSum").html(redGenerator);
 		});
 		$("#yellowButton").on("click", function(){
-			console.log("yellow generator " + redGenerator)
+			console.log("yellow generator " + yellowGenerator)
+			$("#crystalSum").html(yellowGenerator);
+
 		});
 		$("#blueButton").on("click", function(){
-			console.log("blue generator " + redGenerator)
+			console.log("blue generator " + blueGenerator)
+			$("#crystalSum").html(blueGenerator);
 		});
 		$("#greenButton").on("click", function(){
 			console.log("Green Generator " + greenGenerator)
+			$("#crystalSum").html(greenGenerator);
 		});
+
+
 
 
 
@@ -52,7 +60,7 @@ function startGame(){
 
 
 
-//apply 1/12 generator to crystal buttons
+
 
 //everytime crystal button is clicked, add number to crystalSum
 
