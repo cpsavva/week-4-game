@@ -3,8 +3,9 @@
 <head>
 	<title>Crystal Collector!</title>
 	<!--Bootstrap-->
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--css-->
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 </head>
 <body>
@@ -19,10 +20,16 @@
 				<div class="col-md-6">
 					<div class="row">
 						<!--random number-->
-						<div id="numberToMatch" class="col-md-6"></div>
+						<div class="col-md-6">
+							<p>Number to Match:</p>
+							<div id="numberToMatch"></div>
+						</div>
 	
 						<!--crystal sum-->
-						<div id="crystalSum" class="col-md-6"></div>
+						<div class="col-md-6">
+							<p>Total Score: </p>
+							<div id="crystalSum"></div>
+						</div>
 					</div>
 					<div class="row">
 						<!--crystals-->
@@ -39,10 +46,9 @@
 	</div>
 
 </body>
-<script type="text/javascript">
 	<!--jquery-->
+	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 
-	<!--myscript-->
-	
-</script>
+	<!--my script-->
+	<script type="text/javascript" src="./assets/javascript/game.js"></script>
 </html>
