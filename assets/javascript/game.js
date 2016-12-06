@@ -5,7 +5,7 @@ $(document).ready(function(){
 
 var numberToMatch;
 var buttonGenerator;
-var crystalSum;
+var crystalSum = 0;
 var winCounter = 0;
 var loseCounter = 0;
 
@@ -23,24 +23,27 @@ function startGame(){
 		greenGenerator = Math.floor(Math.random() * (1 - 12) + 12);
 
 		//apply 1/12 generator to crystal buttons
+		//everytime crystal button is clicked, add number to crystalSum
 		$("#redButton").on("click", function(){
 			console.log("red generator " + redGenerator)
-			$("#crystalSum").html(redGenerator);
+			$("#crystalSum").append(redGenerator);
 		});
 		$("#yellowButton").on("click", function(){
 			console.log("yellow generator " + yellowGenerator)
-			$("#crystalSum").html(yellowGenerator);
+			$("#crystalSum").append(yellowGenerator);
 
 		});
 		$("#blueButton").on("click", function(){
 			console.log("blue generator " + blueGenerator)
-			$("#crystalSum").html(blueGenerator);
+			$("#crystalSum").append(blueGenerator);
 		});
 		$("#greenButton").on("click", function(){
 			console.log("Green Generator " + greenGenerator)
-			$("#crystalSum").html(greenGenerator);
-		});
+			$("#crystalSum").append(greenGenerator);
+		});	
 
+
+		//need to find a way to add the value of appendixes together
 
 
 
@@ -54,22 +57,30 @@ function startGame(){
 		console.log("button generator " + greenGenerator);
 
 
-	};
-
-
-
-
-
-
-
-//everytime crystal button is clicked, add number to crystalSum
+	
 
 //conditional if 19/120 number equals crystalSum, add to winCounter;
-//if 19/120 number equals crystalSum, add to loseCounter; 
+	if(numberToMatch === crystalSum){
+		winCounter++;
+
+		$("#winCounter").html(winCounter);
+
+		startGame();
+	}
+	//if 19/120 number equals crystalSum, add to loseCounter; 
+	else if(numberToMatch < crystalSum){
+		loseCounter++;
+
+		$("#loseCounter").html(loseCounter);
+
+		startGame();
+	}
+
+
 //reset generators
 //reset crystalSum
 
-
+	};
 
 
 //
