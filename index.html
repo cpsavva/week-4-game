@@ -4,47 +4,67 @@
 	<title>Crystal Collector!</title>
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!--google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Nova+Script|Raleway:600" rel="stylesheet">
 	<!--css-->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
 </head>
 <body>
-	<div class="jumbotron">
-		<h1>Crystal Collector</h1>
+	<div class="page-header">
+		<h1 class="text-center">Crystal Collector</h1>
 	</div>
 	<div class="container">
 		<div class="row">
 				<div class="col-md-6">
 					<!--instructions-->
+					<h2>Instructions</h2>
+					<p>You will be given a random number at the start of the game.</p>
+					<br>
+					<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+					<br>
+					<p>You win the game by matching your total score to the random number. If your score goes above the random number, you lose.</p>
+					<br>
+					<p>The value of each crystal is hidden from you until you click on it.</p>
+					<br>
+					<p>Each time when the game starts, the game will change the values of each crystal!</p>
 				</div>
 				<div class="col-md-6">
 					<div class="row">
 						<!--random number-->
-						<div class="col-md-6">
-							<p>Number to Match:</p>
-							<div id="numberToMatch"></div>
+						<div class="col-md-6" >
+							<p class="text-center">Number to Match:</p>
+							<div class="text-center" id="numberToMatch"></div>
 						</div>
 	
 						<!--crystal sum-->
 						<div class="col-md-6">
-							<p>Total Score: </p>
-							<div id="crystalSum"></div>
+							<p class="text-center">Total Score: </p>
+							<div class="text-center" id="crystalSum"></div>
 						</div>
 					</div><!--row-->
+					<br>
+					<br>
 					<div class="row">
 						<!--crystals-->
-						<div id="crystals" class="col-md-12">
-							<button id="greenButton"><img  src="./assets/images/gem1.jpg" alt="gem one"></button>
-							<button id="redButton"><img src="./assets/images/gem2.jpg" alt="gem two"></button>
-							<button id="yellowButton" ><img src="./assets/images/gem3.jpg" alt="gem three"></button>
-							<button id="blueButton"><img src="./assets/images/gem4.jpg" alt="gem four"></button>
+						<div id="crystals" class="justified col-md-12">
+							<button class="col-md-3" id="greenButton"><img  src="./assets/images/gem1.jpg" alt="gem one"></button>
+							<button class="col-md-3" id="redButton"><img src="./assets/images/gem2.jpg" alt="gem two"></button>
+							<button class="col-md-3" id="yellowButton" ><img src="./assets/images/gem3.jpg" alt="gem three"></button>
+							<button class="col-md-3" id="blueButton"><img src="./assets/images/gem4.jpg" alt="gem four"></button>
 						</div>
 					</div>
+					<br>
+					<br>
 					<div  id="resultBox" class="row">
-						<p>Wins: </p>
-						<div id="winCounter"></div>
-						<p>Losses: </p>
-						<div id="loseCounter"></div>
+						<div class="col-md-6">
+							<p>Wins: </p>
+							<div id="winCounter"></div>
+						</div>
+						<div class="col-md-6">
+							<p>Losses: </p>
+							<div id="loseCounter"></div>
+						</div>
 					</div>
 				</div>
 		</div>

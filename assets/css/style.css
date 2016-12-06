@@ -1,0 +1,19 @@
+body {
+	background-image: url("../images/dopeyDiamondEyes.jpg");
+	font-size: 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+.page-header {
+	font-family: 'Nova Script';
+	font-size: 48px;
+}
+
+#numberToMatch, #crystalSum{
+	font-size: 48px;
+}
+
+button {
+	background-color: #3a404e;
+}

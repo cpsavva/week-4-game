@@ -22,28 +22,8 @@ var loseCounter = 0;
 			blueGenerator = Math.floor(Math.random() * (1 - 12) + 12);
 			greenGenerator = Math.floor(Math.random() * (1 - 12) + 12);
 
-			//apply 1/12 generator to crystal buttons
-			//everytime crystal button is clicked, add number to crystalSum
-			// $("#redButton").on("click", function(){
-			// 	console.log("red generator " + redGenerator)
-			// 	$("#crystalSum").append(redGenerator);
-			// });
-			// $("#yellowButton").on("click", function(){
-			// 	console.log("yellow generator " + yellowGenerator)
-			// 	$("#crystalSum").append(yellowGenerator);
 
-			// });
-			// $("#blueButton").on("click", function(){
-			// 	console.log("blue generator " + blueGenerator)
-			// 	$("#crystalSum").append(blueGenerator);
-			// });
-			// $("#greenButton").on("click", function(){
-			// 	console.log("Green Generator " + greenGenerator)
-			// 	$("#crystalSum").append(greenGenerator);
-			// });	
-
-
-			//need to find a way to add the value of appendixes together
+			//need to find a way to add the value of generators together
 			crystalSum = 0;
 			$("#redButton").on("click", function(){
 	   			crystalSum = Number(crystalSum) + Number(redGenerator);
@@ -63,10 +43,6 @@ var loseCounter = 0;
 			});
 
 	  
-
-
-
-
 			//testing
 			console.log("number to Match: " + numberToMatch);
 			console.log("button generator " + redGenerator);
@@ -84,6 +60,9 @@ var loseCounter = 0;
 			winCounter++;
 
 			$("#winCounter").html(winCounter);
+
+			crystalSum = 0;
+			$("#crystalSum").html(crystalSum);
 
 			startGame();
 		}
@@ -108,13 +87,6 @@ var loseCounter = 0;
 	}
 
 
-	//reset generators
-	//reset crystalSum
-
-
-
-	//
-
 
 	//MAIN PROCESS
 startGame();
@@ -124,7 +96,5 @@ $(document).on("click", function(event) {
  });
 
 
-
-//
 
 });
