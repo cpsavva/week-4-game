@@ -42,6 +42,8 @@ var loseCounter = 0;
 	   			 $("#crystalSum").html(crystalSum);        
 			});
 
+
+
 	  
 			//testing
 			console.log("number to Match: " + numberToMatch);
@@ -59,6 +61,8 @@ var loseCounter = 0;
 		if(numberToMatch == crystalSum){
 			winCounter++;
 
+			$("#winLose").html("You Won!");
+
 			$("#winCounter").html(winCounter);
 
 			crystalSum = 0;
@@ -69,6 +73,8 @@ var loseCounter = 0;
 		//if 19/120 number equals crystalSum, add to loseCounter; 
 		else if(numberToMatch < crystalSum){
 			loseCounter++;
+
+			$("#winLose").html("Oh No! You Lose!");
 
 			$("#loseCounter").html(loseCounter);
 
@@ -91,7 +97,9 @@ var loseCounter = 0;
 	//MAIN PROCESS
 startGame();
 
+
 $(document).on("click", function(event) {
+	$("#winLose").empty();
 	completeGame ();
  });
 

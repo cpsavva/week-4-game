@@ -21,3 +21,7 @@ body {
 button {
 	background-color: #3a404e;
 }
+
+#winLose {
+	color: crimson;
+}
