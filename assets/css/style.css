@@ -31,6 +31,7 @@ button {
 #mineCart{
 	position: relative;
 	width: 100%;
+	z-index: 4;
 }
 
 #cystalSum {
@@ -38,4 +39,5 @@ button {
 	top: 52px;
 	left: 100px;
 	width: 100%;
+	z-index: 10;
 }
