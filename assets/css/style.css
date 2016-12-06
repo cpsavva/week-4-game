@@ -28,8 +28,13 @@ button {
 	color: crimson;
 }
 
-#mineCart{
+#carBox{
 	position: relative;
+
+}
+
+#mineCart{
+	position: absolute;
 	width: 100%;
 	z-index: 4;
 }
