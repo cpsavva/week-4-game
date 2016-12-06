@@ -5,7 +5,7 @@
 	<!--Bootstrap-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!--google fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Nova+Script|Raleway:600" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Script|Raleway:700" rel="stylesheet">
 	<!--css-->
 	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
@@ -34,14 +34,18 @@
 					<div class="row">
 						<!--random number-->
 						<div class="col-md-6" >
-							<p class="text-center">Number to Match:</p>
+							<h2 class="text-center">Crystals to Collect:</h2>
 							<div class="text-center" id="numberToMatch"></div>
 						</div>
 	
 						<!--crystal sum-->
 						<div class="col-md-6">
-							<p class="text-center">Total Score: </p>
-							<div class="text-center" id="crystalSum"></div>
+							<h2 class="text-center">Your Crystals: </h2>
+							<br>
+							<div class="text-center">
+								<img id="mineCart" src="./assets/images/mine-cart.png" alt="mine cart pic" />
+								<div class="text-center" id="crystalSum"></div>
+							</div>
 						</div>
 					</div><!--row-->
 					<br>
@@ -59,11 +63,11 @@
 					<br>
 					<div  id="resultBox" class="row">
 						<div class="col-md-6">
-							<p class="text-center">Wins: </p>
+							<h2 class="text-center">Wins: </h2>
 							<div class="text-center" id="winCounter"></div>
 						</div>
 						<div class="col-md-6">
-							<p class="text-center">Losses: </p>
+							<h2 class="text-center">Losses: </h2>
 							<div class="text-center" id="loseCounter"></div>
 						</div>
 					</div>

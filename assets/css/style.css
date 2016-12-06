@@ -1,12 +1,14 @@
 body {
 	background-image: url("../images/dopeyDiamondEyes.jpg");
 	font-size: 20px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Nova Script', sans-serif;
 	font-weight: bold;
+}
+p {
+	font-family: 'Raleway', sans-serif;
 }
 
 .page-header {
-	font-family: 'Nova Script';
 	font-size: 48px;
 }
 
@@ -24,4 +26,16 @@ button {
 
 #winLose {
 	color: crimson;
+}
+
+#mineCart{
+	position: relative;
+	width: 100%;
+}
+
+#cystalSum {
+	position: absolute;
+	top: 52px;
+	left: 100px;
+	width: 100%;
 }
