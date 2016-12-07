@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>Crystal Collector!</title>
+	
 	<!--Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
 	<!--google fonts-->
 	<link href="https://fonts.googleapis.com/css?family=Nova+Script|Raleway:700" rel="stylesheet">
 	<!--css-->
@@ -11,10 +13,10 @@
 
 </head>
 <body>
-	<div class="page-header">
-		<h1 class="text-center">Crystal Collector</h1>
-		<div class="text-center" id="winLose"></div>
-	</div>
+		<div class="page-header">
+			<h1 class="text-md-center">Crystal Collector</h1>
+		</div>
+	<br>
 	<div class="container">
 		<div class="row">
 				<div class="col-md-6">
@@ -34,18 +36,15 @@
 					<div class="row">
 						<!--random number-->
 						<div class="col-md-6" >
-							<h2 class="text-center">Crystals to Collect:</h2>
-							<div class="text-center" id="numberToMatch"></div>
+							<h2 class="text-md-center">Crystals to Collect:</h2>
+							<div class="text-md-center" id="numberToMatch"></div>
 						</div>
 	
 						<!--crystal sum-->
 						<div class="col-md-6">
-							<h2 class="text-center">Your Crystals: </h2>
+							<h2 class="text-md-center">Your Crystals: </h2>
 							<br>
-							<div id="carBox">
-								<img id="mineCart" src="./assets/images/mine-cart.png" alt="mine cart pic" />
-								<div id="crystalSum"></div>
-							</div>
+							<div class="text-md-center" id="crystalSum"></div>
 						</div>
 					</div><!--row-->
 					<br>
@@ -73,12 +72,26 @@
 					</div>
 				</div>
 		</div>
-	</div>
+	</div><!--container-->
 
+	<div class="modal fade">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h1 class="modal-title" id="winLose"></h1>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="container-fluid modal-body" id="winLoseImage" ></div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 </body>
-	<!--jquery-->
-	<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
 	<!--my script-->
 	<script type="text/javascript" src="./assets/javascript/game.js"></script>
+	
 </html>

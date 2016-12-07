@@ -60,8 +60,18 @@ var loseCounter = 0;
 	function completeGame () {
 		if(numberToMatch == crystalSum){
 			winCounter++;
+				
+			
+			function modal() {
+				$("#winLose").html("You Won!");
+				$("#winLoseImage").html("<img src='../week-4-game/assets/images/winDopey.jpg'>");
+				$(".modal").modal({
+					show: true
+				});
+		
+			};
+			modal ();
 
-			$("#winLose").html("You Won!");
 
 			$("#winCounter").html(winCounter);
 
@@ -74,7 +84,19 @@ var loseCounter = 0;
 		else if(numberToMatch < crystalSum){
 			loseCounter++;
 
-			$("#winLose").html("Oh No! You Lose!");
+			function modal() {
+				$("#winLose").html("Oh No! You Lose!");
+				$("#winLoseImage").html("<img src='../week-4-game/assets/images/docDopey.jpg'>");
+				$('.modal').modal({
+					show: true
+				});
+		
+			};
+			modal ();
+				
+				
+
+			
 
 			$("#loseCounter").html(loseCounter);
 
@@ -99,7 +121,6 @@ startGame();
 
 
 $(document).on("click", function(event) {
-	$("#winLose").empty();
 	completeGame ();
  });
 

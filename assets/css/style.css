@@ -28,19 +28,3 @@ button {
 	color: crimson;
 }
 
-#carBox{
-	position: relative;
-
-}
-
-#mineCart{
-	position: absolute;
-}
-
-#crystalSum {
-	position: absolute;
-	left: 80px;
-	top: 15px;
-	color: white;
-
-}
