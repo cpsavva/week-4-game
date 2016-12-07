@@ -9,6 +9,7 @@ p {
 }
 
 .page-header {
+	padding-top: 40px;
 	font-size: 48px;
 }
 
@@ -29,5 +30,9 @@ button {
 }
 .modal-content {
 	background-color: #3a404e;
+}
+
+#x {
+	color: white;
 }
 
