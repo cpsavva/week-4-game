@@ -27,4 +27,7 @@ button {
 #winLose {
 	color: crimson;
 }
+.modal-content {
+	background-color: #3a404e;
+}
 

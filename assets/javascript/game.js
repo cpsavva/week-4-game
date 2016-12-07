@@ -93,10 +93,6 @@ var loseCounter = 0;
 		
 			};
 			modal ();
-				
-				
-
-			
 
 			$("#loseCounter").html(loseCounter);
 
