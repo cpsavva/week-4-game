@@ -35,14 +35,12 @@ button {
 
 #mineCart{
 	position: absolute;
-	width: 100%;
-	z-index: 4;
 }
 
-#cystalSum {
+#crystalSum {
 	position: absolute;
-	top: 52px;
-	left: 100px;
-	width: 100%;
-	z-index: 10;
+	left: 80px;
+	top: 15px;
+	color: white;
+
 }
